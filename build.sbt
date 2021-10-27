@@ -41,7 +41,7 @@ lazy val root = (project in file("."))
     ))
 
 assemblyJarName in assembly := s"${name.value}_2.12.jar"
-Compile/mainClass := Some("com.taqu.server.feature.FeatureServer")
+Compile/mainClass := Some("com.taqu.som")
 test in assembly := {}
 //scalacOptions in Compile ++= Seq("-Xprint-types", "-Xprint:typer")
 PB.targets in Compile := Seq(
